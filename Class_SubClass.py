@@ -1,4 +1,5 @@
-class Restaurant():
+# Parent class
+class Restaurant():                                         
     def __init__(self,restaurant_name,cuisine_type):
         """ initializtion definition"""
         self.restaurant_name = restaurant_name
@@ -20,7 +21,8 @@ friend_restaurant = Restaurant('ABS', 'Multi Cuisine')
 friend_restaurant.open_restaurant()
 """
 
-class veg_restaurant(Restaurant):
+# Child class
+class veg_restaurant(Restaurant):                       
     """Inheritance - Sub class/ Child class!!!"""
     def __init__(self,restaurant_name,cuisine_type):
         super().__init__(restaurant_name,cuisine_type)
